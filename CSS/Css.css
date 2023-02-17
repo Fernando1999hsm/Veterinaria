@@ -1,0 +1,17 @@
+.imagen-logo{
+    height: 50px;
+    width: 90px;
+}
+.form-content{
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    background: url('https://imgs.search.brave.com/e9IiuQex0Xq7T52rwbEjUSouaLy4eTc220mx9U3hVLI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI1MzQ5/NTUuanBn');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
