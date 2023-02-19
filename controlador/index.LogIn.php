@@ -16,6 +16,8 @@
             $claseUsuario->SetTelefono($valor['Telefono']);
             $claseUsuario->setDireccion($valor['Direccion']);
         }
-        $claseUsuario->escribeDatos();
+        session_start();
+        $_SESSION['claseUsuario']=$claseUsuario;
+        header('Location: ../vistas/index.php');
     }
 ?>
