@@ -13,11 +13,32 @@ class clsUsuario{
 
     private $con;
 
+    public function setIdUsuario($idusuario){
+        $this->ID_USUARIO=$idusuario;
+    }
     public function setUsuario($usu){
         $this->USUARIO=$usu;
     }
     public function setContrasena($contra){
         $this->CONTRASENA=$contra;
+    }
+    public function setIdPersona($idpersona){
+        $this->ID_PERSONA=$idpersona;
+    }
+    public function setNombre($name){
+        $this->NOMBRE=$name;
+    }
+    public function setApellidoP($apep){
+        $this->A_P=$apep;
+    }
+    public function setApellidoM($apem){
+        $this->A_M=$apem;
+    }
+    public function SetTelefono($tel){
+        $this->TELEFONO=$tel;
+    }
+    public function setDireccion($dir){
+        $this->DIRECCION=$dir;
     }
     
     public function __construct($usu,$contra){
@@ -35,8 +56,12 @@ class clsUsuario{
         }
         return $retorno;
     }
+
     public function ValidarPerfil(){
-        $query = $this->con->query('SELECT * FROM usuarios WHERE Usuario='.$this->$USUARIO." AND Contrasena=".$this->$CONTRASENA);
+        $consulta = 'SELECT usuarios.Id_Usuario,usuarios.Id_Persona,personas.Nombre,personas.Apellido_P,personas.Apellido_M,personas.Telefono,personas.Direccion FROM usuarios INNER JOIN personas ON usuarios.Id_Persona=personas.Id_Persona WHERE Usuario="'.$this->USUARIO.'" AND Contrasena="'.$this->CONTRASENA.'"';
+        echo $consulta."<br>";
+        $resultado = $this->con->query($consulta);
+        return $resultado;
     }
 
     public function conexionDB(){
@@ -46,8 +71,18 @@ class clsUsuario{
         }else{
             print_r("Conexion Fallida");
         }
-        return $con;
+        return $this->con;
     }
-    
+    public function escribeDatos(){
+        echo $this->ID_USUARIO."<br>";
+        echo $this->USUARIO."<br>";
+        echo $this->CONTRASENA."<br>";
+        echo $this->ID_PERSONA."<br>";
+        echo $this->NOMBRE."<br>";
+        echo $this->A_P."<br>";
+        echo $this->A_M."<br>";
+        echo $this->TELEFONO."<br>";
+        echo $this->DIRECCION."<br>";
+    }
 }
 ?>
