@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
     <div class="container-fluid">
       <img class="imagen-logo"
         src="https://imgs.search.brave.com/SqRL3i5t3v7FMy8DX2f0x6G7TJKz9ggP80h817P73BI/rs:fit:1200:1136:1/g:ce/aHR0cDovLzIuYnAu/YmxvZ3Nwb3QuY29t/Ly1KX3lfT1JEZWV5/Yy9WZ0VSQWVtQU9X/SS9BQUFBQUFBQURV/ay9LcndVTkNLS1pX/NC9zMTYwMC9NRURJ/Q0lOQS1WRVRFUklO/QVJJQS12ZWN0b3It/bG9nby5wbmc"
