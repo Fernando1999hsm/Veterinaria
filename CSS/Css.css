@@ -22,7 +22,7 @@
 }
 .firstShowcase{
     width: 100%;
-    height: 91vh;
+    height: 73vh;
     background: url('https://imgs.search.brave.com/5SeosG1ex95zgsvEbkI_rIvyprfpCZU4iGZVrbIov4Q/rs:fit:1200:900:1/g:ce/aHR0cHM6Ly8zLmJw/LmJsb2dzcG90LmNv/bS8tUHVtVGpFOGxF/TTAvV001cnlXaUNZ/eUkvQUFBQUFBQUFB/T0kvV0pFSjc2V3VW/cklEZTZkQndQQkVB/TDVqWmUtczZmc05B/Q0xjQi9zMTYwMC9G/b25kbyUyQmRlJTJC/cGFudGFsbGElMkJw/ZXJyb3MlMkI1Lmpw/Zw') no-repeat center;
     background-size: cover;
     display: flex;
