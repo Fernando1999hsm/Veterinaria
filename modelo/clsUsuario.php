@@ -59,7 +59,6 @@ class clsUsuario{
 
     public function ValidarPerfil(){
         $consulta = 'SELECT usuarios.Id_Usuario,usuarios.Id_Persona,personas.Nombre,personas.Apellido_P,personas.Apellido_M,personas.Telefono,personas.Direccion FROM usuarios INNER JOIN personas ON usuarios.Id_Persona=personas.Id_Persona WHERE Usuario="'.$this->USUARIO.'" AND Contrasena="'.$this->CONTRASENA.'"';
-        echo $consulta."<br>";
         $resultado = $this->con->query($consulta);
         return $resultado;
     }
